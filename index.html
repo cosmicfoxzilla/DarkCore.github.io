@@ -1,3 +1,8 @@
+import { Analytics } from '@vercel/analytics/react';
+ 
+export default function RootLayout({ children }) {
+  return (
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,5 +56,9 @@
   
    
    <title>DarkCore</title>
+
+{children}
+        <Analytics />
+    
 </body>
 </html>
